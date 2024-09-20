@@ -1429,8 +1429,8 @@
         {
             "atomType": "Molecule",
             "name": "Verticals",
-            "x": 0.20208333333333334,
-            "y": 0.48470588235294115,
+            "x": 0.18958333333333333,
+            "y": 0.4682352941176471,
             "uniqueID": 1726852340794,
             "ioValues": [
                 {
@@ -1947,8 +1947,8 @@
         {
             "atomType": "Molecule",
             "name": "Put it all together",
-            "x": 0.47291666666666665,
-            "y": 0.40705882352941175,
+            "x": 0.5375,
+            "y": 0.30823529411764705,
             "uniqueID": 1726857786899,
             "ioValues": [
                 {
@@ -2658,13 +2658,13 @@
         {
             "atomType": "Molecule",
             "name": "Double up the sides",
-            "x": 0.5651041666666666,
-            "y": 0.8494117647058823,
+            "x": 0.5088541666666667,
+            "y": 0.5670588235294117,
             "uniqueID": 1726860529568,
             "ioValues": [
                 {
                     "name": "Wood Thickness",
-                    "ioValue": 10
+                    "ioValue": 18
                 },
                 {
                     "name": "One Side",
@@ -2705,8 +2705,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.2114583333333333,
-                    "y": 0.6988235294117647,
+                    "x": 0.284375,
+                    "y": 0.27999999999999997,
                     "uniqueID": 1726861068686,
                     "ioValues": [
                         {
@@ -2723,45 +2723,20 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": -10
-                        }
-                    ]
-                },
-                {
-                    "atomType": "Move",
-                    "name": "Move",
-                    "x": 0.203125,
-                    "y": 0.3552941176470588,
-                    "uniqueID": 1726861075548,
-                    "ioValues": [
-                        {
-                            "name": "geometry",
-                            "ioValue": 1726857714730
-                        },
-                        {
-                            "name": "xDist",
-                            "ioValue": 0
-                        },
-                        {
-                            "name": "yDist",
-                            "ioValue": 0
-                        },
-                        {
-                            "name": "zDist",
-                            "ioValue": 10
+                            "ioValue": -18
                         }
                     ]
                 },
                 {
                     "atomType": "Equation",
                     "name": "-1*T",
-                    "x": 0.12395833333333334,
-                    "y": 0.7694117647058824,
+                    "x": 0.14375000000000002,
+                    "y": 0.2211764705882353,
                     "uniqueID": 1726861089611,
                     "ioValues": [
                         {
                             "name": "T",
-                            "ioValue": 10
+                            "ioValue": 18
                         }
                     ],
                     "currentEquation": "-1*T"
@@ -2774,12 +2749,12 @@
                     "uniqueID": 1726861135341,
                     "ioValues": [
                         {
-                            "name": "3D shape 1",
-                            "ioValue": 1726861075548
-                        },
-                        {
                             "name": "3D shape 2",
                             "ioValue": 1726861068686
+                        },
+                        {
+                            "name": "3D shape 3",
+                            "ioValue": 1726857714730
                         }
                     ],
                     "unionType": "Assembly"
@@ -2795,37 +2770,23 @@
                 },
                 {
                     "ap1Name": "number or geometry",
-                    "ap2Name": "zDist",
-                    "ap2Primary": false,
-                    "ap1ID": 1726860529863,
-                    "ap2ID": 1726861075548
-                },
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "geometry",
-                    "ap2Primary": true,
-                    "ap1ID": 1726860549721,
-                    "ap2ID": 1726861075548
-                },
-                {
-                    "ap1Name": "number or geometry",
                     "ap2Name": "geometry",
                     "ap2Primary": true,
                     "ap1ID": 1726860549721,
                     "ap2ID": 1726861068686
                 },
                 {
-                    "ap1Name": "geometry",
-                    "ap2Name": "3D shape 2",
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "3D shape 3",
                     "ap2Primary": false,
-                    "ap1ID": 1726861068686,
+                    "ap1ID": 1726860549721,
                     "ap2ID": 1726861135341
                 },
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "3D shape 1",
+                    "ap2Name": "3D shape 2",
                     "ap2Primary": false,
-                    "ap1ID": 1726861075548,
+                    "ap1ID": 1726861068686,
                     "ap2ID": 1726861135341
                 },
                 {
@@ -2882,6 +2843,13 @@
             "ap2Primary": false,
             "ap1ID": 1726847821952,
             "ap2ID": 1726857786899
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Wood Thickness",
+            "ap2Primary": false,
+            "ap1ID": 1726847821952,
+            "ap2ID": 1726860529568
         },
         {
             "ap1Name": "number or geometry",
