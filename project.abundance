@@ -79,7 +79,7 @@
                     "ioValues": [
                         {
                             "name": "x length",
-                            "ioValue": 1300
+                            "ioValue": 1400
                         },
                         {
                             "name": "y length",
@@ -128,8 +128,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.31406249999999997,
-                    "y": 0.5929411764705882,
+                    "x": 0.29375,
+                    "y": 0.6517647058823529,
                     "uniqueID": 1726858947445,
                     "ioValues": [
                         {
@@ -203,8 +203,8 @@
                 {
                     "atomType": "ShrinkWrap",
                     "name": "Shrink Wrap",
-                    "x": 0.5072916666666667,
-                    "y": 0.2635294117647059,
+                    "x": 0.5713541666666666,
+                    "y": 0.64,
                     "uniqueID": 1726859223598,
                     "ioValues": [
                         {
@@ -225,6 +225,10 @@
                         },
                         {
                             "name": "3D shape 5",
+                            "ioValue": 1726859246690
+                        },
+                        {
+                            "name": "3D shape 6",
                             "ioValue": ""
                         },
                         {
@@ -245,6 +249,10 @@
                         },
                         {
                             "name": "3D shape 5",
+                            "ioValue": 1726859246690
+                        },
+                        {
+                            "name": "3D shape 6",
                             "ioValue": ""
                         }
                     ]
@@ -266,7 +274,7 @@
                         },
                         {
                             "name": "yDist",
-                            "ioValue": -400
+                            "ioValue": -300
                         },
                         {
                             "name": "zDist",
@@ -337,6 +345,13 @@
                     "ap2Name": "3D shape 1",
                     "ap2Primary": false,
                     "ap1ID": 1726859029296,
+                    "ap2ID": 1726859223598
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "3D shape 5",
+                    "ap2Primary": false,
+                    "ap1ID": 1726859246690,
                     "ap2ID": 1726859223598
                 }
             ],
