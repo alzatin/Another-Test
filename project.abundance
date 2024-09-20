@@ -7,27 +7,27 @@
     "ioValues": [
         {
             "name": "Wood Thickness",
-            "ioValue": 10
+            "ioValue": 18
         },
         {
             "name": "Height",
-            "ioValue": 10
+            "ioValue": 800
         },
         {
             "name": "Number of Arms",
-            "ioValue": 10
+            "ioValue": 4
         },
         {
             "name": "Arm Angle",
-            "ioValue": 10
+            "ioValue": 120
         },
         {
             "name": "Arm Length",
-            "ioValue": 10
+            "ioValue": 300
         },
         {
             "name": "Arm Spacing",
-            "ioValue": 10
+            "ioValue": 200
         }
     ],
     "topLevel": true,
@@ -87,7 +87,7 @@
                 },
                 {
                     "name": "Wood Thickness",
-                    "ioValue": 10
+                    "ioValue": 18
                 }
             ],
             "topLevel": false,
@@ -149,11 +149,11 @@
                         },
                         {
                             "name": "Arm Center Diameter",
-                            "ioValue": 10
+                            "ioValue": 70
                         },
                         {
                             "name": "Wood Thickness",
-                            "ioValue": 10
+                            "ioValue": 18
                         }
                     ],
                     "topLevel": false,
@@ -196,7 +196,7 @@
                             "ioValues": [
                                 {
                                     "name": "diameter",
-                                    "ioValue": 10
+                                    "ioValue": 70
                                 }
                             ]
                         },
@@ -227,17 +227,17 @@
                         {
                             "atomType": "Move",
                             "name": "Move",
-                            "x": 0.30729166666666663,
-                            "y": 0.6023529411764705,
+                            "x": 0.309375,
+                            "y": 0.7529411764705882,
                             "uniqueID": 1726849473827,
                             "ioValues": [
                                 {
                                     "name": "geometry",
-                                    "ioValue": ""
+                                    "ioValue": 1726849293927
                                 },
                                 {
                                     "name": "xDist",
-                                    "ioValue": 0
+                                    "ioValue": 10
                                 },
                                 {
                                     "name": "yDist",
@@ -251,7 +251,20 @@
                         }
                     ],
                     "allConnectors": [
-                        null,
+                        {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "xDist",
+                            "ap2Primary": false,
+                            "ap1ID": 1726849158809,
+                            "ap2ID": 1726849473827
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
+                            "ap1ID": 1726849293927,
+                            "ap2ID": 1726849473827
+                        },
                         {
                             "ap1Name": "number or geometry",
                             "ap2Name": "diameter",
@@ -534,7 +547,15 @@
             "ioValues": []
         }
     ],
-    "allConnectors": [],
+    "allConnectors": [
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Wood Thickness",
+            "ap2Primary": false,
+            "ap1ID": 1726847821952,
+            "ap2ID": 1726847768280
+        }
+    ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
     "compiledBom": {},
