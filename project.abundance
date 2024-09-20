@@ -1098,9 +1098,62 @@
                     "y": 0.32941176470588235,
                     "uniqueID": 1726852340713,
                     "ioValues": []
+                },
+                {
+                    "atomType": "Circle",
+                    "name": "Circle",
+                    "x": 0.13229166666666667,
+                    "y": 0.2564705882352941,
+                    "uniqueID": 1726855761668,
+                    "ioValues": [
+                        {
+                            "name": "diameter",
+                            "ioValue": 80
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.21197916666666666,
+                    "y": 0.43999999999999995,
+                    "uniqueID": 1726855774039,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1726855761668
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 800
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0
+                        }
+                    ]
                 }
             ],
-            "allConnectors": [],
+            "allConnectors": [
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "yDist",
+                    "ap2Primary": false,
+                    "ap1ID": 1726852340713,
+                    "ap2ID": 1726855774039
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1726855761668,
+                    "ap2ID": 1726855774039
+                }
+            ],
             "fileTypeVersion": 1,
             "compiledBom": {}
         }
