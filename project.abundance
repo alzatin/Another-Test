@@ -71,19 +71,19 @@
             "ioValues": [
                 {
                     "name": "Number of Arms",
-                    "ioValue": 10
+                    "ioValue": 4
                 },
                 {
                     "name": "Arm Angle",
-                    "ioValue": 10
+                    "ioValue": 120
                 },
                 {
                     "name": "Arm Length",
-                    "ioValue": 10
+                    "ioValue": 300
                 },
                 {
                     "name": "Arm Spacing",
-                    "ioValue": 10
+                    "ioValue": 200
                 },
                 {
                     "name": "Wood Thickness",
@@ -141,7 +141,7 @@
                     "ioValues": [
                         {
                             "name": "Arm Length",
-                            "ioValue": 10
+                            "ioValue": 300
                         },
                         {
                             "name": "Arm End Diameter",
@@ -149,7 +149,7 @@
                         },
                         {
                             "name": "Arm Center Diameter",
-                            "ioValue": 70
+                            "ioValue": 80
                         },
                         {
                             "name": "Wood Thickness",
@@ -164,7 +164,12 @@
                             "x": 0.98,
                             "y": 0.5,
                             "uniqueID": 1726849158894,
-                            "ioValues": []
+                            "ioValues": [
+                                {
+                                    "name": "number or geometry",
+                                    "ioValue": 1726849993128
+                                }
+                            ]
                         },
                         {
                             "atomType": "Input",
@@ -196,7 +201,7 @@
                             "ioValues": [
                                 {
                                     "name": "diameter",
-                                    "ioValue": 70
+                                    "ioValue": 80
                                 }
                             ]
                         },
@@ -237,7 +242,7 @@
                                 },
                                 {
                                     "name": "xDist",
-                                    "ioValue": 10
+                                    "ioValue": 300
                                 },
                                 {
                                     "name": "yDist",
@@ -246,6 +251,56 @@
                                 {
                                     "name": "zDist",
                                     "ioValue": 0
+                                }
+                            ]
+                        },
+                        {
+                            "atomType": "ShrinkWrap",
+                            "name": "Shrink Wrap",
+                            "x": 0.42552083333333335,
+                            "y": 0.3835294117647059,
+                            "uniqueID": 1726849932234,
+                            "ioValues": [
+                                {
+                                    "name": "3D shape 1",
+                                    "ioValue": 1726849304802
+                                },
+                                {
+                                    "name": "3D shape 2",
+                                    "ioValue": 1726849473827
+                                },
+                                {
+                                    "name": "3D shape 3",
+                                    "ioValue": ""
+                                },
+                                {
+                                    "name": "3D shape 1",
+                                    "ioValue": 1726849304802
+                                },
+                                {
+                                    "name": "3D shape 2",
+                                    "ioValue": 1726849473827
+                                },
+                                {
+                                    "name": "3D shape 3",
+                                    "ioValue": ""
+                                }
+                            ]
+                        },
+                        {
+                            "atomType": "Extrude",
+                            "name": "Extrude",
+                            "x": 0.5546875,
+                            "y": 0.19529411764705884,
+                            "uniqueID": 1726849993128,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": 1726849932234
+                                },
+                                {
+                                    "name": "height",
+                                    "ioValue": 18
                                 }
                             ]
                         }
@@ -266,6 +321,13 @@
                             "ap2ID": 1726849473827
                         },
                         {
+                            "ap1Name": "geometry",
+                            "ap2Name": "3D shape 1",
+                            "ap2Primary": false,
+                            "ap1ID": 1726849304802,
+                            "ap2ID": 1726849932234
+                        },
+                        {
                             "ap1Name": "number or geometry",
                             "ap2Name": "diameter",
                             "ap2Primary": false,
@@ -278,10 +340,38 @@
                             "ap2Primary": false,
                             "ap1ID": 1726849322334,
                             "ap2ID": 1726849304802
+                        },
+                        {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "height",
+                            "ap2Primary": false,
+                            "ap1ID": 1726849415113,
+                            "ap2ID": 1726849993128
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "3D shape 2",
+                            "ap2Primary": false,
+                            "ap1ID": 1726849473827,
+                            "ap2ID": 1726849932234
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
+                            "ap1ID": 1726849932234,
+                            "ap2ID": 1726849993128
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "number or geometry",
+                            "ap2Primary": false,
+                            "ap1ID": 1726849993128,
+                            "ap2ID": 1726849158894
                         }
                     ],
                     "fileTypeVersion": 1,
-                    "compiledBom": {}
+                    "compiledBom": []
                 },
                 {
                     "atomType": "Molecule",
@@ -296,7 +386,7 @@
                         },
                         {
                             "name": "Arm Angle",
-                            "ioValue": 10
+                            "ioValue": 120
                         },
                         {
                             "name": "Arm Length",
@@ -309,6 +399,10 @@
                         {
                             "name": "Wood Thickness",
                             "ioValue": 10
+                        },
+                        {
+                            "name": "The Arm",
+                            "ioValue": 1726849159523
                         }
                     ],
                     "topLevel": false,
@@ -360,9 +454,82 @@
                             "y": 0.17823529411764705,
                             "uniqueID": 1726849433173,
                             "ioValues": []
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "The Arm",
+                            "x": 0.013333333333333334,
+                            "y": 0.3552941176470588,
+                            "uniqueID": 1726850031143,
+                            "ioValues": []
+                        },
+                        {
+                            "atomType": "Rotate",
+                            "name": "Rotate",
+                            "x": 0.3020833333333333,
+                            "y": 0.3247058823529412,
+                            "uniqueID": 1726850067478,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": 1726849159523
+                                },
+                                {
+                                    "name": "x-axis degrees",
+                                    "ioValue": 0
+                                },
+                                {
+                                    "name": "y-axis degrees",
+                                    "ioValue": 0
+                                },
+                                {
+                                    "name": "z-axis degrees",
+                                    "ioValue": 0
+                                }
+                            ]
+                        },
+                        {
+                            "atomType": "Rotate",
+                            "name": "Rotate",
+                            "x": 0.28229166666666666,
+                            "y": 0.7623529411764706,
+                            "uniqueID": 1726850072353,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": 1726849159523
+                                },
+                                {
+                                    "name": "x-axis degrees",
+                                    "ioValue": 0
+                                },
+                                {
+                                    "name": "y-axis degrees",
+                                    "ioValue": 0
+                                },
+                                {
+                                    "name": "z-axis degrees",
+                                    "ioValue": 0
+                                }
+                            ]
                         }
                     ],
-                    "allConnectors": [],
+                    "allConnectors": [
+                        {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
+                            "ap1ID": 1726850031143,
+                            "ap2ID": 1726850067478
+                        },
+                        {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
+                            "ap1ID": 1726850031143,
+                            "ap2ID": 1726850072353
+                        }
+                    ],
                     "fileTypeVersion": 1,
                     "compiledBom": {}
                 },
@@ -375,7 +542,7 @@
                     "ioValues": [
                         {
                             "name": "Number of Arms",
-                            "ioValue": 10
+                            "ioValue": 4
                         },
                         {
                             "name": "Arm Angle",
@@ -387,7 +554,7 @@
                         },
                         {
                             "name": "Arm Spacing",
-                            "ioValue": 10
+                            "ioValue": 200
                         },
                         {
                             "name": "Wood Thickness",
@@ -488,6 +655,13 @@
                     "ap2ID": 1726849201093
                 },
                 {
+                    "ap1Name": "Geometry",
+                    "ap2Name": "The Arm",
+                    "ap2Primary": false,
+                    "ap1ID": 1726849159523,
+                    "ap2ID": 1726849174557
+                },
+                {
                     "ap1Name": "number or geometry",
                     "ap2Name": "Wood Thickness",
                     "ap2Primary": false,
@@ -553,6 +727,34 @@
             "ap2Name": "Wood Thickness",
             "ap2Primary": false,
             "ap1ID": 1726847821952,
+            "ap2ID": 1726847768280
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Number of Arms",
+            "ap2Primary": false,
+            "ap1ID": 1726847829000,
+            "ap2ID": 1726847768280
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Arm Angle",
+            "ap2Primary": false,
+            "ap1ID": 1726847840678,
+            "ap2ID": 1726847768280
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Arm Length",
+            "ap2Primary": false,
+            "ap1ID": 1726847843483,
+            "ap2ID": 1726847768280
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Arm Spacing",
+            "ap2Primary": false,
+            "ap1ID": 1726847846242,
             "ap2ID": 1726847768280
         }
     ],
