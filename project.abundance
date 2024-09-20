@@ -14,19 +14,19 @@
             "ioValue": 10
         },
         {
-            "name": "Number of Spots",
+            "name": "Number of Arms",
             "ioValue": 10
         },
         {
-            "name": "name4",
+            "name": "Arm Angle",
             "ioValue": 10
         },
         {
-            "name": "name5",
+            "name": "Arm Length",
             "ioValue": 10
         },
         {
-            "name": "name6",
+            "name": "Arm Spacing",
             "ioValue": 10
         }
     ],
@@ -68,7 +68,24 @@
             "x": 0.1796875,
             "y": 0.611764705882353,
             "uniqueID": 1726847768280,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "Number of Arms",
+                    "ioValue": 10
+                },
+                {
+                    "name": "Arm Angle",
+                    "ioValue": 10
+                },
+                {
+                    "name": "Arm Length",
+                    "ioValue": 10
+                },
+                {
+                    "name": "Arm Spacing",
+                    "ioValue": 10
+                }
+            ],
             "topLevel": false,
             "allAtoms": [
                 {
@@ -78,6 +95,251 @@
                     "y": 0.5,
                     "uniqueID": 1726847768231,
                     "ioValues": []
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Number of Arms",
+                    "x": 0.013333333333333334,
+                    "y": 0.5547058823529412,
+                    "uniqueID": 1726849052155,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Arm Angle",
+                    "x": 0.013333333333333334,
+                    "y": 0.658235294117647,
+                    "uniqueID": 1726849052299,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Arm Length",
+                    "x": 0.013333333333333334,
+                    "y": 0.7476470588235293,
+                    "uniqueID": 1726849052240,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Arm Spacing",
+                    "x": 0.013333333333333334,
+                    "y": 0.8535294117647059,
+                    "uniqueID": 1726849052345,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Molecule",
+                    "name": "Single Arm",
+                    "x": 0.16875,
+                    "y": 0.31529411764705884,
+                    "uniqueID": 1726849159523,
+                    "ioValues": [
+                        {
+                            "name": "Number of Arms",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "Arm Angle",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "Arm Length",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "Arm Spacing",
+                            "ioValue": 10
+                        }
+                    ],
+                    "topLevel": false,
+                    "allAtoms": [
+                        {
+                            "atomType": "Output",
+                            "name": "Output",
+                            "x": 0.98,
+                            "y": 0.5,
+                            "uniqueID": 1726849158894,
+                            "ioValues": []
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Number of Arms",
+                            "x": 0.013333333333333334,
+                            "y": 0.5547058823529412,
+                            "uniqueID": 1726849159254,
+                            "ioValues": []
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Arm Angle",
+                            "x": 0.013333333333333334,
+                            "y": 0.658235294117647,
+                            "uniqueID": 1726849159572,
+                            "ioValues": []
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Arm Length",
+                            "x": 0.013333333333333334,
+                            "y": 0.7476470588235293,
+                            "uniqueID": 1726849158809,
+                            "ioValues": []
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Arm Spacing",
+                            "x": 0.013333333333333334,
+                            "y": 0.8535294117647059,
+                            "uniqueID": 1726849158984,
+                            "ioValues": []
+                        }
+                    ],
+                    "allConnectors": [],
+                    "fileTypeVersion": 1,
+                    "compiledBom": {}
+                },
+                {
+                    "atomType": "Molecule",
+                    "name": "Make it Double",
+                    "x": 0.26979166666666665,
+                    "y": 0.5552941176470588,
+                    "uniqueID": 1726849174557,
+                    "ioValues": [
+                        {
+                            "name": "Number of Arms",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "Arm Angle",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "Arm Length",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "Arm Spacing",
+                            "ioValue": 10
+                        }
+                    ],
+                    "topLevel": false,
+                    "allAtoms": [
+                        {
+                            "atomType": "Output",
+                            "name": "Output",
+                            "x": 0.98,
+                            "y": 0.5,
+                            "uniqueID": 1726849173764,
+                            "ioValues": []
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Number of Arms",
+                            "x": 0.013333333333333334,
+                            "y": 0.5547058823529412,
+                            "uniqueID": 1726849174525,
+                            "ioValues": []
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Arm Angle",
+                            "x": 0.013333333333333334,
+                            "y": 0.658235294117647,
+                            "uniqueID": 1726849173806,
+                            "ioValues": []
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Arm Length",
+                            "x": 0.013333333333333334,
+                            "y": 0.7476470588235293,
+                            "uniqueID": 1726849174670,
+                            "ioValues": []
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Arm Spacing",
+                            "x": 0.013333333333333334,
+                            "y": 0.8535294117647059,
+                            "uniqueID": 1726849173895,
+                            "ioValues": []
+                        }
+                    ],
+                    "allConnectors": [],
+                    "fileTypeVersion": 1,
+                    "compiledBom": {}
+                },
+                {
+                    "atomType": "Molecule",
+                    "name": "Move the Arms",
+                    "x": 0.41041666666666665,
+                    "y": 0.7411764705882352,
+                    "uniqueID": 1726849201093,
+                    "ioValues": [
+                        {
+                            "name": "Number of Arms",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "Arm Angle",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "Arm Length",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "Arm Spacing",
+                            "ioValue": 10
+                        }
+                    ],
+                    "topLevel": false,
+                    "allAtoms": [
+                        {
+                            "atomType": "Output",
+                            "name": "Output",
+                            "x": 0.98,
+                            "y": 0.5,
+                            "uniqueID": 1726849201449,
+                            "ioValues": []
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Number of Arms",
+                            "x": 0.013333333333333334,
+                            "y": 0.5547058823529412,
+                            "uniqueID": 1726849201098,
+                            "ioValues": []
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Arm Angle",
+                            "x": 0.013333333333333334,
+                            "y": 0.658235294117647,
+                            "uniqueID": 1726849201400,
+                            "ioValues": []
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Arm Length",
+                            "x": 0.013333333333333334,
+                            "y": 0.7476470588235293,
+                            "uniqueID": 1726849201147,
+                            "ioValues": []
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Arm Spacing",
+                            "x": 0.013333333333333334,
+                            "y": 0.8535294117647059,
+                            "uniqueID": 1726849201204,
+                            "ioValues": []
+                        }
+                    ],
+                    "allConnectors": [],
+                    "fileTypeVersion": 1,
+                    "compiledBom": {}
                 }
             ],
             "allConnectors": [],
@@ -102,33 +364,33 @@
         },
         {
             "atomType": "Input",
-            "name": "Number of Spots",
+            "name": "Number of Arms",
             "x": 0.013333333333333334,
-            "y": 0.4305882352941176,
+            "y": 0.6047058823529412,
             "uniqueID": 1726847829000,
             "ioValues": []
         },
         {
             "atomType": "Input",
-            "name": "name4",
+            "name": "Arm Angle",
             "x": 0.013333333333333334,
-            "y": 0.6423529411764706,
+            "y": 0.7082352941176471,
             "uniqueID": 1726847840678,
             "ioValues": []
         },
         {
             "atomType": "Input",
-            "name": "name5",
+            "name": "Arm Length",
             "x": 0.013333333333333334,
-            "y": 0.7364705882352941,
+            "y": 0.7976470588235294,
             "uniqueID": 1726847843483,
             "ioValues": []
         },
         {
             "atomType": "Input",
-            "name": "name6",
+            "name": "Arm Spacing",
             "x": 0.013333333333333334,
-            "y": 0.8258823529411764,
+            "y": 0.9035294117647059,
             "uniqueID": 1726847846242,
             "ioValues": []
         }
