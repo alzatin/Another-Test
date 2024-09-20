@@ -1084,7 +1084,7 @@
                     "ioValues": [
                         {
                             "name": "number or geometry",
-                            "ioValue": 1726856343722
+                            "ioValue": 1726856735611
                         }
                     ]
                 },
@@ -1092,7 +1092,7 @@
                     "atomType": "Input",
                     "name": "Wood Thickness",
                     "x": 0.013333333333333334,
-                    "y": 0.22823529411764704,
+                    "y": 0.291764705882353,
                     "uniqueID": 1726852341079,
                     "ioValues": []
                 },
@@ -1100,7 +1100,7 @@
                     "atomType": "Input",
                     "name": "Height",
                     "x": 0.013333333333333334,
-                    "y": 0.32941176470588235,
+                    "y": 0.42117647058823526,
                     "uniqueID": 1726852340713,
                     "ioValues": []
                 },
@@ -1240,11 +1240,11 @@
                     "ioValues": [
                         {
                             "name": "x length",
-                            "ioValue": 140
+                            "ioValue": 500
                         },
                         {
                             "name": "y length",
-                            "ioValue": 140
+                            "ioValue": 400
                         }
                     ]
                 },
@@ -1305,9 +1305,33 @@
                             "ioValue": ""
                         }
                     ]
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 0.5536458333333333,
+                    "y": 0.6823529411764706,
+                    "uniqueID": 1726856735611,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1726856343722
+                        },
+                        {
+                            "name": "height",
+                            "ioValue": 18
+                        }
+                    ]
                 }
             ],
             "allConnectors": [
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "height",
+                    "ap2Primary": false,
+                    "ap1ID": 1726852341079,
+                    "ap2ID": 1726856735611
+                },
                 {
                     "ap1Name": "number or geometry",
                     "ap2Name": "yDist",
@@ -1359,10 +1383,10 @@
                 },
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "number or geometry",
-                    "ap2Primary": false,
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
                     "ap1ID": 1726856343722,
-                    "ap2ID": 1726852340817
+                    "ap2ID": 1726856735611
                 },
                 {
                     "ap1Name": "geometry",
@@ -1384,6 +1408,13 @@
                     "ap2Primary": false,
                     "ap1ID": 1726856498165,
                     "ap2ID": 1726856343722
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1726856735611,
+                    "ap2ID": 1726852340817
                 }
             ],
             "fileTypeVersion": 1,
@@ -1393,7 +1424,7 @@
             "atomType": "Move",
             "name": "Move",
             "x": 0.4744791666666667,
-            "y": 0.5788235294117647,
+            "y": 0.52,
             "uniqueID": 1726856675991,
             "ioValues": [
                 {
@@ -1406,7 +1437,7 @@
                 },
                 {
                     "name": "yDist",
-                    "ioValue": -100
+                    "ioValue": -160
                 },
                 {
                     "name": "zDist",
@@ -1416,7 +1447,7 @@
         },
         {
             "atomType": "Join",
-            "name": "Join",
+            "name": "Assembly",
             "x": 0.615625,
             "y": 0.7458823529411764,
             "uniqueID": 1726856708110,
@@ -1429,7 +1460,8 @@
                     "name": "3D shape 2",
                     "ioValue": 1726847768280
                 }
-            ]
+            ],
+            "unionType": "Assembly"
         }
     ],
     "allConnectors": [
