@@ -6,7 +6,11 @@
 
 
 
- Readme text here
+ I need to figure out a way to add more move for the number of Arms iput 
+
+![readme](/readme1726852210493.svg)
+
+
 
 
 

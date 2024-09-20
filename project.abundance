@@ -43,8 +43,8 @@
         {
             "atomType": "Molecule",
             "name": "Base",
-            "x": 0.15625,
-            "y": 0.27999999999999997,
+            "x": 0.24635416666666668,
+            "y": 0.16941176470588235,
             "uniqueID": 1726847763961,
             "ioValues": [],
             "topLevel": false,
@@ -65,8 +65,8 @@
         {
             "atomType": "Molecule",
             "name": "Arms",
-            "x": 0.1796875,
-            "y": 0.611764705882353,
+            "x": 0.18072916666666666,
+            "y": 0.7552941176470588,
             "uniqueID": 1726847768280,
             "ioValues": [
                 {
@@ -98,7 +98,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1726847768231,
-                    "ioValues": []
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1726849201093
+                        }
+                    ]
                 },
                 {
                     "atomType": "Input",
@@ -673,7 +678,12 @@
                             "x": 0.98,
                             "y": 0.5,
                             "uniqueID": 1726849201449,
-                            "ioValues": []
+                            "ioValues": [
+                                {
+                                    "name": "number or geometry",
+                                    "ioValue": 1726852166658
+                                }
+                            ]
                         },
                         {
                             "atomType": "Input",
@@ -827,11 +837,16 @@
                         {
                             "atomType": "Readme",
                             "name": "README",
-                            "x": 0.43906249999999997,
-                            "y": 0.2635294117647059,
+                            "x": 0.5411458333333333,
+                            "y": 0.5388235294117647,
                             "uniqueID": 1726852210493,
-                            "ioValues": [],
-                            "readmeText": "Readme text here",
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": 1726852166658
+                                }
+                            ],
+                            "readmeText": "I need to figure out a way to add more move for the number of Arms iput",
                             "global": true
                         }
                     ],
@@ -905,10 +920,24 @@
                             "ap2Primary": false,
                             "ap1ID": 1726852119885,
                             "ap2ID": 1726852166658
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": false,
+                            "ap1ID": 1726852166658,
+                            "ap2ID": 1726852210493
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "number or geometry",
+                            "ap2Primary": false,
+                            "ap1ID": 1726852166658,
+                            "ap2ID": 1726849201449
                         }
                     ],
                     "fileTypeVersion": 1,
-                    "compiledBom": {}
+                    "compiledBom": []
                 },
                 {
                     "atomType": "Input",
@@ -963,6 +992,13 @@
                     "ap2ID": 1726849201093
                 },
                 {
+                    "ap1Name": "Geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1726849201093,
+                    "ap2ID": 1726847768231
+                },
+                {
                     "ap1Name": "number or geometry",
                     "ap2Name": "Wood Thickness",
                     "ap2Primary": false,
@@ -971,7 +1007,7 @@
                 }
             ],
             "fileTypeVersion": 1,
-            "compiledBom": {}
+            "compiledBom": []
         },
         {
             "atomType": "Input",
@@ -1020,6 +1056,53 @@
             "y": 0.9035294117647059,
             "uniqueID": 1726847846242,
             "ioValues": []
+        },
+        {
+            "atomType": "Molecule",
+            "name": "Verticals",
+            "x": 0.35625,
+            "y": 0.5247058823529412,
+            "uniqueID": 1726852340794,
+            "ioValues": [
+                {
+                    "name": "Wood Thickness",
+                    "ioValue": 18
+                },
+                {
+                    "name": "Height",
+                    "ioValue": 800
+                }
+            ],
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.98,
+                    "y": 0.5,
+                    "uniqueID": 1726852340817,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Wood Thickness",
+                    "x": 0.013333333333333334,
+                    "y": 0.22823529411764704,
+                    "uniqueID": 1726852341079,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Height",
+                    "x": 0.013333333333333334,
+                    "y": 0.32941176470588235,
+                    "uniqueID": 1726852340713,
+                    "ioValues": []
+                }
+            ],
+            "allConnectors": [],
+            "fileTypeVersion": 1,
+            "compiledBom": {}
         }
     ],
     "allConnectors": [
@@ -1029,6 +1112,20 @@
             "ap2Primary": false,
             "ap1ID": 1726847821952,
             "ap2ID": 1726847768280
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Wood Thickness",
+            "ap2Primary": false,
+            "ap1ID": 1726847821952,
+            "ap2ID": 1726852340794
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Height",
+            "ap2Primary": false,
+            "ap1ID": 1726847824556,
+            "ap2ID": 1726852340794
         },
         {
             "ap1Name": "number or geometry",
