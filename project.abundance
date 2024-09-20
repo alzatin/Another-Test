@@ -19,7 +19,7 @@
         },
         {
             "name": "Arm Angle",
-            "ioValue": 120
+            "ioValue": 130
         },
         {
             "name": "Arm Length",
@@ -75,7 +75,7 @@
                 },
                 {
                     "name": "Arm Angle",
-                    "ioValue": 120
+                    "ioValue": 130
                 },
                 {
                     "name": "Arm Length",
@@ -386,7 +386,7 @@
                         },
                         {
                             "name": "Arm Angle",
-                            "ioValue": 120
+                            "ioValue": 130
                         },
                         {
                             "name": "Arm Length",
@@ -484,7 +484,7 @@
                                 },
                                 {
                                     "name": "z-axis degrees",
-                                    "ioValue": 0
+                                    "ioValue": 155
                                 }
                             ]
                         },
@@ -509,48 +509,47 @@
                                 },
                                 {
                                     "name": "z-axis degrees",
-                                    "ioValue": 0
+                                    "ioValue": 25
                                 }
                             ]
                         },
                         {
                             "atomType": "Equation",
-                            "name": "x + y",
-                            "x": 0.4411458333333333,
-                            "y": 0.40705882352941175,
+                            "name": "180-B",
+                            "x": 0.22083333333333333,
+                            "y": 0.5058823529411764,
                             "uniqueID": 1726850124445,
                             "ioValues": [
                                 {
-                                    "name": "x",
-                                    "ioValue": 1
-                                },
-                                {
-                                    "name": "y",
-                                    "ioValue": 1
+                                    "name": "B",
+                                    "ioValue": 25
                                 }
                             ],
-                            "currentEquation": "x + y"
+                            "currentEquation": "180-B"
                         },
                         {
                             "atomType": "Equation",
-                            "name": "x + y",
-                            "x": 0.4453125,
-                            "y": 0.7129411764705882,
+                            "name": "(180-A)/2",
+                            "x": 0.11875000000000001,
+                            "y": 0.7835294117647059,
                             "uniqueID": 1726850404208,
                             "ioValues": [
                                 {
-                                    "name": "x",
-                                    "ioValue": 1
-                                },
-                                {
-                                    "name": "y",
-                                    "ioValue": 1
+                                    "name": "A",
+                                    "ioValue": 130
                                 }
                             ],
-                            "currentEquation": "x + y"
+                            "currentEquation": "(180-A)/2"
                         }
                     ],
                     "allConnectors": [
+                        {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "A",
+                            "ap2Primary": false,
+                            "ap1ID": 1726849173806,
+                            "ap2ID": 1726850404208
+                        },
                         {
                             "ap1Name": "number or geometry",
                             "ap2Name": "geometry",
@@ -564,6 +563,27 @@
                             "ap2Primary": true,
                             "ap1ID": 1726850031143,
                             "ap2ID": 1726850072353
+                        },
+                        {
+                            "ap1Name": "result",
+                            "ap2Name": "z-axis degrees",
+                            "ap2Primary": false,
+                            "ap1ID": 1726850124445,
+                            "ap2ID": 1726850067478
+                        },
+                        {
+                            "ap1Name": "result",
+                            "ap2Name": "z-axis degrees",
+                            "ap2Primary": false,
+                            "ap1ID": 1726850404208,
+                            "ap2ID": 1726850072353
+                        },
+                        {
+                            "ap1Name": "result",
+                            "ap2Name": "B",
+                            "ap2Primary": false,
+                            "ap1ID": 1726850404208,
+                            "ap2ID": 1726850124445
                         }
                     ],
                     "fileTypeVersion": 1,
