@@ -491,8 +491,8 @@
                         {
                             "atomType": "Rotate",
                             "name": "Rotate",
-                            "x": 0.28229166666666666,
-                            "y": 0.7623529411764706,
+                            "x": 0.33489583333333334,
+                            "y": 0.7929411764705883,
                             "uniqueID": 1726850072353,
                             "ioValues": [
                                 {
@@ -512,6 +512,42 @@
                                     "ioValue": 0
                                 }
                             ]
+                        },
+                        {
+                            "atomType": "Equation",
+                            "name": "x + y",
+                            "x": 0.4411458333333333,
+                            "y": 0.40705882352941175,
+                            "uniqueID": 1726850124445,
+                            "ioValues": [
+                                {
+                                    "name": "x",
+                                    "ioValue": 1
+                                },
+                                {
+                                    "name": "y",
+                                    "ioValue": 1
+                                }
+                            ],
+                            "currentEquation": "x + y"
+                        },
+                        {
+                            "atomType": "Equation",
+                            "name": "x + y",
+                            "x": 0.4911458333333333,
+                            "y": 0.35705882352941176,
+                            "uniqueID": 1726850404208,
+                            "ioValues": [
+                                {
+                                    "name": "x",
+                                    "ioValue": 1
+                                },
+                                {
+                                    "name": "y",
+                                    "ioValue": 1
+                                }
+                            ],
+                            "currentEquation": "x + y"
                         }
                     ],
                     "allConnectors": [
