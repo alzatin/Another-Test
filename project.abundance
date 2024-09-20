@@ -84,6 +84,10 @@
                 {
                     "name": "Arm Spacing",
                     "ioValue": 10
+                },
+                {
+                    "name": "Wood Thickness",
+                    "ioValue": 10
                 }
             ],
             "topLevel": false,
@@ -136,19 +140,19 @@
                     "uniqueID": 1726849159523,
                     "ioValues": [
                         {
-                            "name": "Number of Arms",
-                            "ioValue": 10
-                        },
-                        {
-                            "name": "Arm Angle",
-                            "ioValue": 10
-                        },
-                        {
                             "name": "Arm Length",
                             "ioValue": 10
                         },
                         {
-                            "name": "Arm Spacing",
+                            "name": "Arm End Diameter",
+                            "ioValue": 45
+                        },
+                        {
+                            "name": "Arm Center Diameter",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "Wood Thickness",
                             "ioValue": 10
                         }
                     ],
@@ -164,38 +168,105 @@
                         },
                         {
                             "atomType": "Input",
-                            "name": "Number of Arms",
-                            "x": 0.013333333333333334,
-                            "y": 0.5547058823529412,
-                            "uniqueID": 1726849159254,
-                            "ioValues": []
-                        },
-                        {
-                            "atomType": "Input",
-                            "name": "Arm Angle",
-                            "x": 0.013333333333333334,
-                            "y": 0.658235294117647,
-                            "uniqueID": 1726849159572,
-                            "ioValues": []
-                        },
-                        {
-                            "atomType": "Input",
                             "name": "Arm Length",
                             "x": 0.013333333333333334,
-                            "y": 0.7476470588235293,
+                            "y": 0.748235294117647,
                             "uniqueID": 1726849158809,
                             "ioValues": []
                         },
                         {
+                            "atomType": "Circle",
+                            "name": "Circle",
+                            "x": 0.17135416666666667,
+                            "y": 0.32235294117647056,
+                            "uniqueID": 1726849293927,
+                            "ioValues": [
+                                {
+                                    "name": "diameter",
+                                    "ioValue": 45
+                                }
+                            ]
+                        },
+                        {
+                            "atomType": "Circle",
+                            "name": "Circle",
+                            "x": 0.1734375,
+                            "y": 0.5882352941176471,
+                            "uniqueID": 1726849304802,
+                            "ioValues": [
+                                {
+                                    "name": "diameter",
+                                    "ioValue": 10
+                                }
+                            ]
+                        },
+                        {
                             "atomType": "Input",
-                            "name": "Arm Spacing",
+                            "name": "Arm End Diameter",
                             "x": 0.013333333333333334,
-                            "y": 0.8535294117647059,
-                            "uniqueID": 1726849158984,
+                            "y": 0.4235294117647059,
+                            "uniqueID": 1726849318936,
                             "ioValues": []
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Arm Center Diameter",
+                            "x": 0.013333333333333334,
+                            "y": 0.5270588235294118,
+                            "uniqueID": 1726849322334,
+                            "ioValues": []
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Wood Thickness",
+                            "x": 0.013333333333333334,
+                            "y": 0.19529411764705884,
+                            "uniqueID": 1726849415113,
+                            "ioValues": []
+                        },
+                        {
+                            "atomType": "Move",
+                            "name": "Move",
+                            "x": 0.30729166666666663,
+                            "y": 0.6023529411764705,
+                            "uniqueID": 1726849473827,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": ""
+                                },
+                                {
+                                    "name": "xDist",
+                                    "ioValue": 0
+                                },
+                                {
+                                    "name": "yDist",
+                                    "ioValue": 0
+                                },
+                                {
+                                    "name": "zDist",
+                                    "ioValue": 0
+                                }
+                            ]
                         }
                     ],
-                    "allConnectors": [],
+                    "allConnectors": [
+                        null,
+                        {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "diameter",
+                            "ap2Primary": false,
+                            "ap1ID": 1726849318936,
+                            "ap2ID": 1726849293927
+                        },
+                        {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "diameter",
+                            "ap2Primary": false,
+                            "ap1ID": 1726849322334,
+                            "ap2ID": 1726849304802
+                        }
+                    ],
                     "fileTypeVersion": 1,
                     "compiledBom": {}
                 },
@@ -220,6 +291,10 @@
                         },
                         {
                             "name": "Arm Spacing",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "Wood Thickness",
                             "ioValue": 10
                         }
                     ],
@@ -264,6 +339,14 @@
                             "y": 0.8535294117647059,
                             "uniqueID": 1726849173895,
                             "ioValues": []
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Wood Thickness",
+                            "x": 0.013333333333333334,
+                            "y": 0.17823529411764705,
+                            "uniqueID": 1726849433173,
+                            "ioValues": []
                         }
                     ],
                     "allConnectors": [],
@@ -273,8 +356,8 @@
                 {
                     "atomType": "Molecule",
                     "name": "Move the Arms",
-                    "x": 0.41041666666666665,
-                    "y": 0.7411764705882352,
+                    "x": 0.403125,
+                    "y": 0.8282352941176472,
                     "uniqueID": 1726849201093,
                     "ioValues": [
                         {
@@ -291,6 +374,10 @@
                         },
                         {
                             "name": "Arm Spacing",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "Wood Thickness",
                             "ioValue": 10
                         }
                     ],
@@ -335,14 +422,66 @@
                             "y": 0.8535294117647059,
                             "uniqueID": 1726849201204,
                             "ioValues": []
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Wood Thickness",
+                            "x": 0.013333333333333334,
+                            "y": 0.18588235294117647,
+                            "uniqueID": 1726849440054,
+                            "ioValues": []
                         }
                     ],
                     "allConnectors": [],
                     "fileTypeVersion": 1,
                     "compiledBom": {}
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Wood Thickness",
+                    "x": 0.013333333333333334,
+                    "y": 0.17823529411764705,
+                    "uniqueID": 1726849411154,
+                    "ioValues": []
                 }
             ],
-            "allConnectors": [],
+            "allConnectors": [
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "Number of Arms",
+                    "ap2Primary": false,
+                    "ap1ID": 1726849052155,
+                    "ap2ID": 1726849201093
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "Arm Angle",
+                    "ap2Primary": false,
+                    "ap1ID": 1726849052299,
+                    "ap2ID": 1726849174557
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "Arm Length",
+                    "ap2Primary": false,
+                    "ap1ID": 1726849052240,
+                    "ap2ID": 1726849159523
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "Arm Spacing",
+                    "ap2Primary": false,
+                    "ap1ID": 1726849052345,
+                    "ap2ID": 1726849201093
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "Wood Thickness",
+                    "ap2Primary": false,
+                    "ap1ID": 1726849411154,
+                    "ap2ID": 1726849159523
+                }
+            ],
             "fileTypeVersion": 1,
             "compiledBom": {}
         },
