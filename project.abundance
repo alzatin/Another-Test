@@ -1,12 +1,138 @@
 {
     "atomType": "Molecule",
-    "name": "Another Test",
+    "name": "Another-Test",
     "x": 0,
     "y": 0,
     "uniqueID": 1726088591876,
-    "ioValues": [],
+    "ioValues": [
+        {
+            "name": "Wood Thickness",
+            "ioValue": 10
+        },
+        {
+            "name": "Height",
+            "ioValue": 10
+        },
+        {
+            "name": "Number of Spots",
+            "ioValue": 10
+        },
+        {
+            "name": "name4",
+            "ioValue": 10
+        },
+        {
+            "name": "name5",
+            "ioValue": 10
+        },
+        {
+            "name": "name6",
+            "ioValue": 10
+        }
+    ],
     "topLevel": true,
-    "allAtoms": [],
+    "allAtoms": [
+        {
+            "atomType": "Output",
+            "name": "Output",
+            "x": 0.98,
+            "y": 0.5,
+            "uniqueID": 1726847714499,
+            "ioValues": []
+        },
+        {
+            "atomType": "Molecule",
+            "name": "Base",
+            "x": 0.15625,
+            "y": 0.27999999999999997,
+            "uniqueID": 1726847763961,
+            "ioValues": [],
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.98,
+                    "y": 0.5,
+                    "uniqueID": 1726847764632,
+                    "ioValues": []
+                }
+            ],
+            "allConnectors": [],
+            "fileTypeVersion": 1,
+            "compiledBom": {}
+        },
+        {
+            "atomType": "Molecule",
+            "name": "Arms",
+            "x": 0.1796875,
+            "y": 0.611764705882353,
+            "uniqueID": 1726847768280,
+            "ioValues": [],
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.98,
+                    "y": 0.5,
+                    "uniqueID": 1726847768231,
+                    "ioValues": []
+                }
+            ],
+            "allConnectors": [],
+            "fileTypeVersion": 1,
+            "compiledBom": {}
+        },
+        {
+            "atomType": "Input",
+            "name": "Wood Thickness",
+            "x": 0.013333333333333334,
+            "y": 0.22823529411764704,
+            "uniqueID": 1726847821952,
+            "ioValues": []
+        },
+        {
+            "atomType": "Input",
+            "name": "Height",
+            "x": 0.013333333333333334,
+            "y": 0.32941176470588235,
+            "uniqueID": 1726847824556,
+            "ioValues": []
+        },
+        {
+            "atomType": "Input",
+            "name": "Number of Spots",
+            "x": 0.013333333333333334,
+            "y": 0.4305882352941176,
+            "uniqueID": 1726847829000,
+            "ioValues": []
+        },
+        {
+            "atomType": "Input",
+            "name": "name4",
+            "x": 0.013333333333333334,
+            "y": 0.6423529411764706,
+            "uniqueID": 1726847840678,
+            "ioValues": []
+        },
+        {
+            "atomType": "Input",
+            "name": "name5",
+            "x": 0.013333333333333334,
+            "y": 0.7364705882352941,
+            "uniqueID": 1726847843483,
+            "ioValues": []
+        },
+        {
+            "atomType": "Input",
+            "name": "name6",
+            "x": 0.013333333333333334,
+            "y": 0.8258823529411764,
+            "uniqueID": 1726847846242,
+            "ioValues": []
+        }
+    ],
     "allConnectors": [],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
