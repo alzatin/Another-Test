@@ -413,7 +413,12 @@
                             "x": 0.98,
                             "y": 0.5,
                             "uniqueID": 1726849173764,
-                            "ioValues": []
+                            "ioValues": [
+                                {
+                                    "name": "number or geometry",
+                                    "ioValue": 1726851915801
+                                }
+                            ]
                         },
                         {
                             "atomType": "Input",
@@ -540,6 +545,24 @@
                                 }
                             ],
                             "currentEquation": "(180-A)/2"
+                        },
+                        {
+                            "atomType": "Join",
+                            "name": "Fusion",
+                            "x": 0.5296875,
+                            "y": 0.5811764705882353,
+                            "uniqueID": 1726851915801,
+                            "ioValues": [
+                                {
+                                    "name": "3D shape 1",
+                                    "ioValue": 1726850067478
+                                },
+                                {
+                                    "name": "3D shape 2",
+                                    "ioValue": 1726850072353
+                                }
+                            ],
+                            "unionType": "Fusion"
                         }
                     ],
                     "allConnectors": [
@@ -565,6 +588,20 @@
                             "ap2ID": 1726850072353
                         },
                         {
+                            "ap1Name": "geometry",
+                            "ap2Name": "3D shape 1",
+                            "ap2Primary": false,
+                            "ap1ID": 1726850067478,
+                            "ap2ID": 1726851915801
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "3D shape 2",
+                            "ap2Primary": false,
+                            "ap1ID": 1726850072353,
+                            "ap2ID": 1726851915801
+                        },
+                        {
                             "ap1Name": "result",
                             "ap2Name": "z-axis degrees",
                             "ap2Primary": false,
@@ -584,16 +621,23 @@
                             "ap2Primary": false,
                             "ap1ID": 1726850404208,
                             "ap2ID": 1726850124445
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "number or geometry",
+                            "ap2Primary": false,
+                            "ap1ID": 1726851915801,
+                            "ap2ID": 1726849173764
                         }
                     ],
                     "fileTypeVersion": 1,
-                    "compiledBom": {}
+                    "compiledBom": []
                 },
                 {
                     "atomType": "Molecule",
                     "name": "Move the Arms",
-                    "x": 0.403125,
-                    "y": 0.8282352941176472,
+                    "x": 0.4322916666666667,
+                    "y": 0.7576470588235295,
                     "uniqueID": 1726849201093,
                     "ioValues": [
                         {
@@ -615,6 +659,10 @@
                         {
                             "name": "Wood Thickness",
                             "ioValue": 10
+                        },
+                        {
+                            "name": "The Arms",
+                            "ioValue": 1726849174557
                         }
                     ],
                     "topLevel": false,
@@ -666,9 +714,199 @@
                             "y": 0.18588235294117647,
                             "uniqueID": 1726849440054,
                             "ioValues": []
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "The Arms",
+                            "x": 0.013333333333333334,
+                            "y": 0.36705882352941177,
+                            "uniqueID": 1726851984192,
+                            "ioValues": []
+                        },
+                        {
+                            "atomType": "Move",
+                            "name": "Move",
+                            "x": 0.1890625,
+                            "y": 0.47058823529411764,
+                            "uniqueID": 1726852028607,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": 1726849174557
+                                },
+                                {
+                                    "name": "xDist",
+                                    "ioValue": 0
+                                },
+                                {
+                                    "name": "yDist",
+                                    "ioValue": 200
+                                },
+                                {
+                                    "name": "zDist",
+                                    "ioValue": 0
+                                }
+                            ]
+                        },
+                        {
+                            "atomType": "Move",
+                            "name": "Move",
+                            "x": 0.2869791666666667,
+                            "y": 0.6494117647058824,
+                            "uniqueID": 1726852117223,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": 1726852028607
+                                },
+                                {
+                                    "name": "xDist",
+                                    "ioValue": 0
+                                },
+                                {
+                                    "name": "yDist",
+                                    "ioValue": 200
+                                },
+                                {
+                                    "name": "zDist",
+                                    "ioValue": 0
+                                }
+                            ]
+                        },
+                        {
+                            "atomType": "Move",
+                            "name": "Move",
+                            "x": 0.4140625,
+                            "y": 0.8094117647058824,
+                            "uniqueID": 1726852119885,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": 1726852117223
+                                },
+                                {
+                                    "name": "xDist",
+                                    "ioValue": 0
+                                },
+                                {
+                                    "name": "yDist",
+                                    "ioValue": 200
+                                },
+                                {
+                                    "name": "zDist",
+                                    "ioValue": 0
+                                }
+                            ]
+                        },
+                        {
+                            "atomType": "Join",
+                            "name": "Assembly",
+                            "x": 0.3848958333333333,
+                            "y": 0.21176470588235294,
+                            "uniqueID": 1726852166658,
+                            "ioValues": [
+                                {
+                                    "name": "3D shape 1",
+                                    "ioValue": 1726849174557
+                                },
+                                {
+                                    "name": "3D shape 2",
+                                    "ioValue": 1726852028607
+                                },
+                                {
+                                    "name": "3D shape 3",
+                                    "ioValue": 1726852117223
+                                },
+                                {
+                                    "name": "3D shape 4",
+                                    "ioValue": 1726852119885
+                                }
+                            ],
+                            "unionType": "Assembly"
+                        },
+                        {
+                            "atomType": "Readme",
+                            "name": "README",
+                            "x": 0.43906249999999997,
+                            "y": 0.2635294117647059,
+                            "uniqueID": 1726852210493,
+                            "ioValues": [],
+                            "readmeText": "Readme text here",
+                            "global": true
                         }
                     ],
-                    "allConnectors": [],
+                    "allConnectors": [
+                        {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "yDist",
+                            "ap2Primary": false,
+                            "ap1ID": 1726849201204,
+                            "ap2ID": 1726852028607
+                        },
+                        {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "yDist",
+                            "ap2Primary": false,
+                            "ap1ID": 1726849201204,
+                            "ap2ID": 1726852117223
+                        },
+                        {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "yDist",
+                            "ap2Primary": false,
+                            "ap1ID": 1726849201204,
+                            "ap2ID": 1726852119885
+                        },
+                        {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
+                            "ap1ID": 1726851984192,
+                            "ap2ID": 1726852028607
+                        },
+                        {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "3D shape 1",
+                            "ap2Primary": false,
+                            "ap1ID": 1726851984192,
+                            "ap2ID": 1726852166658
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
+                            "ap1ID": 1726852028607,
+                            "ap2ID": 1726852117223
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "3D shape 2",
+                            "ap2Primary": false,
+                            "ap1ID": 1726852028607,
+                            "ap2ID": 1726852166658
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
+                            "ap1ID": 1726852117223,
+                            "ap2ID": 1726852119885
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "3D shape 3",
+                            "ap2Primary": false,
+                            "ap1ID": 1726852117223,
+                            "ap2ID": 1726852166658
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "3D shape 4",
+                            "ap2Primary": false,
+                            "ap1ID": 1726852119885,
+                            "ap2ID": 1726852166658
+                        }
+                    ],
                     "fileTypeVersion": 1,
                     "compiledBom": {}
                 },
@@ -716,6 +954,13 @@
                     "ap2Primary": false,
                     "ap1ID": 1726849159523,
                     "ap2ID": 1726849174557
+                },
+                {
+                    "ap1Name": "Geometry",
+                    "ap2Name": "The Arms",
+                    "ap2Primary": false,
+                    "ap1ID": 1726849174557,
+                    "ap2ID": 1726849201093
                 },
                 {
                     "ap1Name": "number or geometry",
