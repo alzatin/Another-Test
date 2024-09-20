@@ -2111,7 +2111,7 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 580
+                            "ioValue": 560
                         }
                     ]
                 },
@@ -2136,7 +2136,7 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": -580
+                            "ioValue": -560
                         }
                     ]
                 },
