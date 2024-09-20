@@ -73,22 +73,164 @@
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 0.1171875,
-                    "y": 0.6658823529411765,
+                    "x": 0.07447916666666667,
+                    "y": 0.8376470588235293,
                     "uniqueID": 1726858791079,
                     "ioValues": [
                         {
                             "name": "x length",
-                            "ioValue": 10
+                            "ioValue": 1200
                         },
                         {
                             "name": "y length",
-                            "ioValue": 10
+                            "ioValue": 400
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Circle",
+                    "name": "Circle",
+                    "x": 0.16197916666666667,
+                    "y": 0.15529411764705883,
+                    "uniqueID": 1726858910220,
+                    "ioValues": [
+                        {
+                            "name": "diameter",
+                            "ioValue": 45
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.21770833333333334,
+                    "y": 0.3976470588235294,
+                    "uniqueID": 1726858933405,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1726858910220
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": 600
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.31406249999999997,
+                    "y": 0.5929411764705882,
+                    "uniqueID": 1726858947445,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1726858910220
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": -600
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.44375,
+                    "y": 0.703529411764706,
+                    "uniqueID": 1726858949574,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1726858910220
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.39166666666666666,
+                    "y": 0.23529411764705882,
+                    "uniqueID": 1726859029296,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1726858910220
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": -400
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0
                         }
                     ]
                 }
             ],
-            "allConnectors": [],
+            "allConnectors": [
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1726858910220,
+                    "ap2ID": 1726858933405
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1726858910220,
+                    "ap2ID": 1726858947445
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1726858910220,
+                    "ap2ID": 1726858949574
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1726858910220,
+                    "ap2ID": 1726859029296
+                }
+            ],
             "fileTypeVersion": 1,
             "compiledBom": {}
         },
