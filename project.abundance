@@ -1021,7 +1021,7 @@
             "atomType": "Input",
             "name": "Height",
             "x": 0.013333333333333334,
-            "y": 0.32941176470588235,
+            "y": 0.3788235294117647,
             "uniqueID": 1726847824556,
             "ioValues": []
         },
@@ -1437,7 +1437,7 @@
                 },
                 {
                     "name": "yDist",
-                    "ioValue": -160
+                    "ioValue": -200
                 },
                 {
                     "name": "zDist",
@@ -1462,9 +1462,101 @@
                 }
             ],
             "unionType": "Fusion"
+        },
+        {
+            "atomType": "Tag",
+            "name": "cutLayout,",
+            "x": 0.6843750000000001,
+            "y": 0.9035294117647059,
+            "uniqueID": 1726857714730,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1726856708110
+                }
+            ],
+            "tags": [
+                "cutLayout",
+                ""
+            ],
+            "cutTag": true
+        },
+        {
+            "atomType": "Molecule",
+            "name": "Put it all together",
+            "x": 0.7625000000000001,
+            "y": 0.52,
+            "uniqueID": 1726857786899,
+            "ioValues": [
+                {
+                    "name": "Wood Thickness",
+                    "ioValue": 18
+                },
+                {
+                    "name": "Height",
+                    "ioValue": 10
+                },
+                {
+                    "name": "Sides",
+                    "ioValue": 1726856708110
+                }
+            ],
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.98,
+                    "y": 0.5,
+                    "uniqueID": 1726857786604,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Wood Thickness",
+                    "x": 0.013333333333333334,
+                    "y": 0.22823529411764704,
+                    "uniqueID": 1726857786747,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Height",
+                    "x": 0.013333333333333334,
+                    "y": 0.32941176470588235,
+                    "uniqueID": 1726857786122,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Sides",
+                    "x": 0.013333333333333334,
+                    "y": 0.6658823529411765,
+                    "uniqueID": 1726857836352,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Base",
+                    "x": 0.013333333333333334,
+                    "y": 0.7929411764705883,
+                    "uniqueID": 1726857855816,
+                    "ioValues": []
+                }
+            ],
+            "allConnectors": [],
+            "fileTypeVersion": 1,
+            "compiledBom": {}
         }
     ],
     "allConnectors": [
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "Base",
+            "ap2Primary": false,
+            "ap1ID": 1726847763961,
+            "ap2ID": 1726857786899
+        },
         {
             "ap1Name": "Geometry",
             "ap2Name": "3D shape 2",
@@ -1485,6 +1577,13 @@
             "ap2Primary": false,
             "ap1ID": 1726847821952,
             "ap2ID": 1726852340794
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Wood Thickness",
+            "ap2Primary": false,
+            "ap1ID": 1726847821952,
+            "ap2ID": 1726857786899
         },
         {
             "ap1Name": "number or geometry",
@@ -1534,6 +1633,20 @@
             "ap2Primary": false,
             "ap1ID": 1726856675991,
             "ap2ID": 1726856708110
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1726856708110,
+            "ap2ID": 1726857714730
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Sides",
+            "ap2Primary": false,
+            "ap1ID": 1726856708110,
+            "ap2ID": 1726857786899
         }
     ],
     "unitsKey": "MM",
