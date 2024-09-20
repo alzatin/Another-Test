@@ -60,7 +60,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1726847764632,
-                    "ioValues": []
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1726859736357
+                        }
+                    ]
                 },
                 {
                     "atomType": "Input",
@@ -103,8 +108,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.21770833333333334,
-                    "y": 0.3976470588235294,
+                    "x": 0.14114583333333333,
+                    "y": 0.6376470588235293,
                     "uniqueID": 1726858933405,
                     "ioValues": [
                         {
@@ -128,8 +133,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.29375,
-                    "y": 0.6517647058823529,
+                    "x": 0.26406250000000003,
+                    "y": 0.45882352941176474,
                     "uniqueID": 1726858947445,
                     "ioValues": [
                         {
@@ -153,8 +158,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.4182291666666667,
-                    "y": 0.5576470588235294,
+                    "x": 0.43854166666666666,
+                    "y": 0.19058823529411764,
                     "uniqueID": 1726858949574,
                     "ioValues": [
                         {
@@ -178,8 +183,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.34010416666666665,
-                    "y": 0.19529411764705884,
+                    "x": 0.33958333333333335,
+                    "y": 0.32235294117647056,
                     "uniqueID": 1726859029296,
                     "ioValues": [
                         {
@@ -281,9 +286,33 @@
                             "ioValue": 0
                         }
                     ]
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 0.6479166666666667,
+                    "y": 0.8352941176470589,
+                    "uniqueID": 1726859736357,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1726859223598
+                        },
+                        {
+                            "name": "height",
+                            "ioValue": 10
+                        }
+                    ]
                 }
             ],
             "allConnectors": [
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "height",
+                    "ap2Primary": false,
+                    "ap1ID": 1726858745212,
+                    "ap2ID": 1726859736357
+                },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
@@ -349,14 +378,28 @@
                 },
                 {
                     "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1726859223598,
+                    "ap2ID": 1726859736357
+                },
+                {
+                    "ap1Name": "geometry",
                     "ap2Name": "3D shape 5",
                     "ap2Primary": false,
                     "ap1ID": 1726859246690,
                     "ap2ID": 1726859223598
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1726859736357,
+                    "ap2ID": 1726847764632
                 }
             ],
             "fileTypeVersion": 1,
-            "compiledBom": {}
+            "compiledBom": []
         },
         {
             "atomType": "Molecule",
@@ -1795,6 +1838,10 @@
                 {
                     "name": "Sides",
                     "ioValue": 1726856708110
+                },
+                {
+                    "name": "Base",
+                    "ioValue": 1726847763961
                 }
             ],
             "topLevel": false,
@@ -1838,6 +1885,56 @@
                     "y": 0.7929411764705883,
                     "uniqueID": 1726857855816,
                     "ioValues": []
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.28229166666666666,
+                    "y": 0.47294117647058825,
+                    "uniqueID": 1726860001368,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": ""
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.27760416666666665,
+                    "y": 0.7811764705882354,
+                    "uniqueID": 1726860006306,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": ""
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0
+                        }
+                    ]
                 }
             ],
             "allConnectors": [],
