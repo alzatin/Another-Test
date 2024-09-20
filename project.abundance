@@ -46,7 +46,12 @@
             "x": 0.24635416666666668,
             "y": 0.16941176470588235,
             "uniqueID": 1726847763961,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "Wood Thickness",
+                    "ioValue": 10
+                }
+            ],
             "topLevel": false,
             "allAtoms": [
                 {
@@ -56,6 +61,31 @@
                     "y": 0.5,
                     "uniqueID": 1726847764632,
                     "ioValues": []
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Wood Thickness",
+                    "x": 0.013333333333333334,
+                    "y": 0.32,
+                    "uniqueID": 1726858745212,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Rectangle",
+                    "name": "Rectangle",
+                    "x": 0.1171875,
+                    "y": 0.6658823529411765,
+                    "uniqueID": 1726858791079,
+                    "ioValues": [
+                        {
+                            "name": "x length",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "y length",
+                            "ioValue": 10
+                        }
+                    ]
                 }
             ],
             "allConnectors": [],
@@ -1060,8 +1090,8 @@
         {
             "atomType": "Molecule",
             "name": "Verticals",
-            "x": 0.35625,
-            "y": 0.5247058823529412,
+            "x": 0.30052083333333335,
+            "y": 0.5176470588235293,
             "uniqueID": 1726852340794,
             "ioValues": [
                 {
