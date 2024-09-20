@@ -38,7 +38,12 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1726847714499,
-            "ioValues": []
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": 1726857786899
+                }
+            ]
         },
         {
             "atomType": "Molecule",
@@ -1852,7 +1857,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1726857786604,
-                    "ioValues": []
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1726860435551
+                        }
+                    ]
                 },
                 {
                     "atomType": "Input",
@@ -1903,7 +1913,7 @@
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 0
+                            "ioValue": -500
                         },
                         {
                             "name": "zDist",
@@ -1928,7 +1938,7 @@
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 0
+                            "ioValue": -500
                         },
                         {
                             "name": "zDist",
@@ -2101,10 +2111,17 @@
                     "ap2Primary": false,
                     "ap1ID": 1726860388149,
                     "ap2ID": 1726860435551
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1726860435551,
+                    "ap2ID": 1726857786604
                 }
             ],
             "fileTypeVersion": 1,
-            "compiledBom": {}
+            "compiledBom": []
         },
         {
             "atomType": "Molecule",
@@ -2399,6 +2416,13 @@
         },
         {
             "ap1Name": "Geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 1726857786899,
+            "ap2ID": 1726847714499
+        },
+        {
+            "ap1Name": "Geometry",
             "ap2Name": "Sides",
             "ap2Primary": false,
             "ap1ID": 1726860529568,
@@ -2407,6 +2431,6 @@
     ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
-    "compiledBom": {},
+    "compiledBom": [],
     "filetypeVersion": 1
 }
